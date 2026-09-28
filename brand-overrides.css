@@ -1,0 +1,44 @@
+:root{--ink:#070909;--acid:#086c7c;--paper:#f4f6f6;--white:#fff;--muted:#667276;--line:#d9dfe0;--orange:#086c7c;font-family:"Open Sans",Arial,sans-serif}
+body{background:linear-gradient(180deg,#fff 0,#f4f6f6 420px);color:var(--ink)}
+.topbar{min-height:88px;background:#070909;border-bottom:3px solid #086c7c}
+.brand{gap:17px}
+.brand img{display:block;width:146px;height:auto}
+.brand-product{padding-left:17px;border-left:1px solid #4a5051;color:#fff;font-family:"Bebas Neue",Impact,sans-serif;font-size:19px;font-weight:400;letter-spacing:.12em}
+.concept-pill{border-color:#3e4749;color:#d9dfe0;font-family:"Open Sans",Arial,sans-serif;letter-spacing:.11em}
+.demo-tools{display:flex;align-items:center;gap:10px}.reset-demo{padding:8px 11px;border:1px solid #3e4749;border-radius:2px;background:transparent;color:#d9dfe0;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.reset-demo:hover,.reset-demo:focus-visible{border-color:#55afbd;color:#fff}.demo-status{min-width:62px;color:#55afbd;font-size:9px;font-weight:700;text-align:right}
+main{padding-top:42px}
+.hero{position:relative;overflow:hidden;align-items:center;padding:44px 48px;background:#070909;color:#fff}
+.hero::before{content:"";position:absolute;inset:0 auto 0 0;width:7px;background:#086c7c}
+.hero::after{content:"PULSE";position:absolute;right:-16px;bottom:-55px;color:#fff;opacity:.035;font-family:"Bebas Neue",Impact,sans-serif;font-size:220px;line-height:1;pointer-events:none}
+.hero>*,.hero-proof{position:relative;z-index:1}
+.eyebrow{color:#3ca8b8;font-family:"Open Sans",Arial,sans-serif;font-weight:700}
+.hero h1,.desk-heading h2,.section-heading h2,.confirmation h2,.lead-card h3{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.012em}
+.hero h1{max-width:780px;font-size:clamp(52px,6.4vw,82px);line-height:.9;letter-spacing:.008em}
+.hero h1 em{color:#42a5b5;font-family:inherit;font-style:normal;font-weight:400}
+.hero-copy{color:#c7cdce}
+.source-simulator{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:18px;padding:12px 14px;border-left:4px solid #086c7c;background:#e5ecee}.source-simulator strong{flex:none;color:#536266;font-size:9px;letter-spacing:.12em}.source-simulator>div{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px}.source-simulator button{padding:7px 10px;border:1px solid #c5d0d2;border-radius:2px;background:#fff;color:#445052;font-size:9px;font-weight:700;cursor:pointer}.source-simulator button.active{border-color:#086c7c;background:#086c7c;color:#fff}
+.hero-proof{border:1px solid #314044;border-radius:0;background:#101516}
+.hero-proof p{color:#aeb8ba}
+.view-switch{border-radius:0;background:#dfe4e5}
+.view-switch button{border-radius:0;font-family:"Open Sans",Arial,sans-serif}
+.view-switch button.active{box-shadow:none}
+.view-switch button span{background:#086c7c;color:#fff}
+.panel,.metrics article,.lead-card{border-color:#d6dcdd;border-radius:4px;box-shadow:0 12px 28px #0714160a}
+.section-heading>span,.success{background:#086c7c;color:#fff}
+.primary,.secondary{border-radius:2px;background:#070909;color:#fff}
+.primary span{color:#55afbd}
+.confirmation{background:#070909}
+.confirmation .eyebrow{color:#55afbd}
+.journey li>span{border-radius:2px;background:#e1eff1;color:#075d6a}
+.lead-interest{color:#086c7c!important}
+input:focus,select:focus,textarea:focus{border-color:#086c7c;box-shadow:0 0 0 3px #086c7c22}
+.filter-row button,.controls input,.controls select,input,select,textarea{border-radius:2px}
+.filter-row button.active{background:#070909}
+.source-tag{border-radius:2px;background:#e9eeee;color:#536266}
+.whatsapp-action{width:100%;border:0;border-radius:2px;background:#086c7c;color:#fff;cursor:pointer;font-family:"Open Sans",Arial,sans-serif;text-align:left}
+.whatsapp-preview{width:min(520px,calc(100% - 28px));border:1px solid #324246;border-radius:3px;background:#f4f6f6;color:#070909;padding:28px;box-shadow:0 24px 90px #0008}.whatsapp-preview::backdrop{background:#020606bb}.whatsapp-preview h2{margin:0 0 18px;font-family:"Bebas Neue",Impact,sans-serif;font-size:32px;font-weight:400}.dialog-close{position:absolute;right:14px;top:10px;border:0;background:transparent;color:#526064;font-size:27px;cursor:pointer}.message-preview{padding:14px;border-left:4px solid #086c7c;background:#fff}.message-preview span{color:#086c7c;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}.message-preview p{margin:6px 0 0;color:#303a3c;font-size:13px;line-height:1.5}.preview-note{color:#667276;font-size:11px;line-height:1.5}.dialog-done{width:100%;justify-content:space-between}
+footer{border-top-color:#d1d8d9;background:#fff}
+.legal-page{width:min(720px,calc(100% - 32px));margin:48px auto;padding:clamp(24px,5vw,48px);border:1px solid #d6dcdd;background:#fff;box-shadow:0 12px 32px #0714160d}.legal-page h1{margin:0 0 24px;font-family:"Bebas Neue",Impact,sans-serif;font-size:clamp(48px,8vw,72px);font-weight:400;letter-spacing:.01em}.legal-page p{color:#445052;line-height:1.65}.legal-page a,footer a{color:#086c7c;font-weight:700}
+
+@media(max-width:960px){.hero{padding:36px 34px}.hero::after{font-size:150px}}
+@media(max-width:680px){.topbar{align-items:center}.brand img{width:108px}.brand-product{font-size:15px;padding-left:11px}.concept-pill{display:none}.demo-status{display:none}.hero{padding:32px 24px}.hero h1{font-size:50px}.hero::after{display:none}.source-simulator{align-items:flex-start;flex-direction:column}.source-simulator>div{justify-content:flex-start}}

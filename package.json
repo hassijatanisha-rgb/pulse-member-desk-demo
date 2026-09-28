@@ -1,0 +1,11 @@
+{
+  "name": "pulse-member-desk-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node test_site.js"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  }
+}

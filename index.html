@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Concept demonstration of a client-owned member enquiry desk for Pulse Gymnasium.">
+  <meta name="robots" content="noindex">
+  <title>Pulse Member Desk — Concept Demo</title>
+  <link rel="icon" href="pulse-logo-transparent.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brand-overrides.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Pulse Member Desk home"><img src="pulse-logo-transparent.png" alt="Pulse"><span class="brand-product">MEMBER DESK</span></a>
+    <div class="demo-tools"><span id="demo-status" class="demo-status" role="status" aria-live="polite"></span><button id="reset-demo" class="reset-demo" type="button">Reset demo</button><span class="concept-pill">CONCEPT DEMO · FICTIONAL DATA</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">MEMBERSHIP FOLLOW-UP, OWNED BY PULSE</p>
+        <h1>Interest is only valuable<br><em>when someone follows up.</em></h1>
+        <p class="hero-copy">One branded enquiry link across WhatsApp, Instagram, Facebook, email, the website and QR codes—then one desk for assigning every lead and moving it toward a visit or membership.</p>
+      </div>
+      <aside class="hero-proof"><strong>Not another booking engine.</strong><p>This concept sits before Pulse’s existing purchase and booking flows. It demonstrates structured enquiry capture and staff follow-up only.</p></aside>
+    </section>
+
+    <section class="source-simulator" aria-label="Choose the enquiry source to simulate"><strong>SIMULATED ENTRY SOURCE</strong><div><button type="button" data-demo-source="WhatsApp">WhatsApp</button><button type="button" data-demo-source="Instagram">Instagram</button><button type="button" data-demo-source="Facebook">Facebook</button><button type="button" data-demo-source="Email">Email</button><button type="button" data-demo-source="Website">Website</button><button type="button" data-demo-source="QR code">QR code</button></div></section>
+
+    <nav class="view-switch" aria-label="Demo view">
+      <button type="button" class="active" data-view="member">Member enquiry</button>
+      <button type="button" data-view="growth">Growth desk <span id="new-badge">0</span></button>
+    </nav>
+
+    <section id="member-view" class="view active">
+      <div class="member-grid">
+        <form id="lead-form" class="panel lead-form">
+          <div class="section-heading"><span>01</span><div><p class="eyebrow">START HERE</p><h2>What would you like to explore?</h2></div></div>
+          <div class="two">
+            <label>Full name<input name="name" required maxlength="80" placeholder="Your name" autocomplete="name"></label>
+            <label>Phone / WhatsApp<input name="phone" required maxlength="24" placeholder="+255 7XX XXX XXX" inputmode="tel" autocomplete="tel"></label>
+          </div>
+          <label>I’m interested in<select name="interest" required>
+            <option value="">Choose one</option>
+            <option>Membership enquiry</option>
+            <option>Personal training consultation</option>
+            <option>Group classes</option>
+            <option>Ninja Warrior</option>
+            <option>Sports court</option>
+            <option>Stretch &amp; recovery</option>
+          </select></label>
+          <div class="two">
+            <label>Primary goal<select name="goal" required>
+              <option value="">Choose a goal</option><option>Strength &amp; muscle</option><option>Weight management</option><option>Fitness &amp; endurance</option><option>Mobility &amp; recovery</option><option>Sport performance</option><option>General wellness</option>
+            </select></label>
+            <label>Plan interest<select name="plan"><option>Not sure yet</option><option>1 month</option><option>3 months</option><option>6 months</option><option>1 year</option></select></label>
+          </div>
+          <div class="two">
+            <label>Preferred visit date<input name="visitDate" type="date" required></label>
+            <label>Preferred time<input name="visitTime" type="time" required></label>
+          </div>
+          <label>Anything the team should know? <small>Optional</small><textarea name="notes" maxlength="400" placeholder="Experience level, questions, preferred class, or accessibility needs"></textarea></label>
+          <label class="consent"><input name="consent" type="checkbox" required><span>I agree that Pulse may contact me about this enquiry.</span></label>
+          <button class="primary" type="submit">Send demo enquiry <span>→</span></button>
+          <p class="form-note">Demo only. Use fictional details; nothing leaves this browser and data clears when this tab closes.</p>
+        </form>
+
+        <aside class="member-side">
+          <section id="confirmation" class="panel confirmation hidden" aria-live="polite">
+            <span class="success">✓</span><p class="eyebrow">ENQUIRY CAPTURED</p><h2>Now give the team a clear next action.</h2><p>Demo reference <strong id="confirmation-code"></strong></p><button class="secondary" type="button" data-view-growth>Open growth desk</button>
+          </section>
+          <section class="panel journey">
+            <div class="section-heading"><span>02</span><div><p class="eyebrow">THE HANDOFF</p><h2>From interest to membership</h2></div></div>
+            <ol>
+              <li><span>1</span><div><strong>Capture context</strong><p>Know the activity, goal, plan interest and preferred visit.</p></div></li>
+              <li><span>2</span><div><strong>Assign ownership</strong><p>One staff member owns the next conversation.</p></div></li>
+              <li><span>3</span><div><strong>Track the outcome</strong><p>See who needs follow-up, who booked a visit and who joined.</p></div></li>
+            </ol>
+            <p class="source-note">Concept tailored from Pulse’s publicly listed offerings. It does not represent Pulse’s current internal process.</p>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <section id="growth-view" class="view">
+      <div class="desk-heading"><div><p class="eyebrow">MEMBER GROWTH DESK</p><h2>Every enquiry has a next step.</h2></div><div class="metrics"><article><strong id="metric-new">0</strong><span>New</span></article><article><strong id="metric-due">0</strong><span>Follow-up due</span></article><article><strong id="metric-visits">0</strong><span>Visits booked</span></article><article><strong id="metric-joined">0</strong><span>Joined</span></article></div></div>
+      <div class="filter-row"><button type="button" class="active" data-filter="all">All leads</button><button type="button" data-filter="due">Follow-up due</button><button type="button" data-filter="unassigned">Unassigned</button><button type="button" data-filter="joined">Joined</button></div>
+      <div id="lead-list" class="lead-list"></div>
+    </section>
+  </main>
+
+  <template id="lead-template">
+    <article class="lead-card">
+      <div class="lead-top"><span class="lead-code"></span><span class="source-tag"></span></div>
+      <h3 class="lead-name"></h3><p class="lead-interest"></p><p class="lead-context"></p>
+      <div class="visit-row"><span class="visit-date"></span><span class="visit-time"></span></div>
+      <div class="controls">
+        <label>Stage<select data-action="stage"></select></label>
+        <label>Owner<select data-action="owner"></select></label>
+        <label>Next follow-up<input data-action="followup" type="date"></label>
+      </div>
+      <button class="whatsapp-action" data-action="whatsapp" type="button">Preview WhatsApp follow-up <span>↗</span></button>
+    </article>
+  </template>
+
+  <dialog id="whatsapp-preview" class="whatsapp-preview">
+    <form method="dialog"><button class="dialog-close" aria-label="Close WhatsApp preview">×</button></form>
+    <p class="eyebrow">WHATSAPP FOLLOW-UP PREVIEW</p><h2 id="whatsapp-person"></h2>
+    <div class="message-preview"><span>Pulse Gymnasium</span><p id="whatsapp-message"></p></div>
+    <p class="preview-note">In the installed product, this opens Pulse’s own WhatsApp Business with the message prefilled. Nothing is sent automatically.</p>
+    <form method="dialog"><button class="primary dialog-done" type="submit">Return to member desk <span>←</span></button></form>
+  </dialog>
+
+  <footer>Independent concept demonstration prepared for a conversation with Pulse Gymnasium. No affiliation is implied. No live Pulse or customer data is used. <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
